@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Unit5-02 </title>
+    <meta charset="utf-8">
+    <meta name="description" content="Matthias's cool webpage">
+    <meta name="keywords" content="positive or negative number">
+    <meta name="author" content="Matthias Bo">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+    <h1>Is your number negative or positive?</h1>
+    <p>This wepbage will help determine whether the number you put in is negative or positive!</p>
+    <br>
+    <p><i>Insert your number here</i></p>
+    <input type="text" id="typednumber">
+    <br>
+    <br>
+    <button id="determine">Submit</button>
+    <script>
+    document.getElementById("determine").addEventListener("click", myfunction);
+    function myfunction() {
+    let number;
+    number = document.getElementById("typednumber").value;
+
+    if (number > 0) {
+        alert ("This number is positive!");
+}
+    else {
+        alert ("This number is negative!");
+}
+}
+    </script>
+    </body>
+</html>
